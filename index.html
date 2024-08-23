@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta con Doraemon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="./img/oracle.png" alt="Imagen 1">
+            <div class="line"></div>
+            <img src="./img/alura.png" alt="Imagen 2">
+        </div>
+        <div class="right-header">
+            <!-- Texto eliminado aquí -->
+        </div>
+    </header>
+    
+    <div class="book-container">
+        <div class="page right-page">
+            <h1>Ingresa el texto aquí</h1>
+            <textarea id="inputText" placeholder="Escribe aquí tu texto..."></textarea>
+            <div class="warning">
+                <span class="warning-icon">⚠️</span> 
+                Solo escribe en minúsculas y sin acentos.
+            </div>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+                <button onclick="limpiarTexto()">Limpiar Texto</button>
+            </div>
+        </div>
+        <div class="page left-page">
+            <h1>Texto Desencriptado</h1>
+            <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+            <button class="copy-button" onclick="copiarTexto()">Copiar Texto</button>
+        </div>
+    </div>
+
+    <div class="image-container-doraemon">
+        <img src="./img/doraemon.png" alt="Imagen de Doraemon">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
